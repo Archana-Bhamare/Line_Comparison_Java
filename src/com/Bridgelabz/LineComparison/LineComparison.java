@@ -21,11 +21,20 @@ public class LineComparison {
 		System.out.println("Length of a Line 2 is : " + lineLength2);
 		Double line1 = new Double(lineLength1);
 		Double line2 = new Double(lineLength2);
+		// checking Equality of length
 		boolean equal = line1.equals(line2);
 		if (equal)
 			System.out.println("Lines are Equal");
 		else
 			System.out.println("Lines are Not Equal");
 
+		// Compare the length
+		int compare = line1.compareTo(line2);
+		if (compare == 0)
+			System.out.println("Lines are Equal");
+		else if (compare > 0)
+			System.out.println("Line 1 is Greater than Line 2");
+		else
+			System.out.println("Line 1 is Less than Line 2");
 	}
 }
